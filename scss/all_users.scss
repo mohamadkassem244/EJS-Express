@@ -1,0 +1,56 @@
+table{
+    margin: 1rem auto;
+    width: 1200px;
+    border-collapse: collapse;
+    border: 1px solid black;
+    & thead{
+        & tr{
+            & th{
+                background-color: #ccc;
+                color: black;
+                text-align: left;
+                padding: 1rem 0.4rem;
+                &:hover{
+                    background-color: #424242;
+                    color: white;
+                }
+            }
+        }
+    }
+    & tbody{
+        
+        & tr{     
+            
+            &:nth-child(even){
+                background-color: #f2f2f2;;
+            }
+            &:hover{
+                background-color: #ddd;
+            }
+            & td{
+                padding: 1rem 0.4rem;
+                &[class="center"]{
+                    text-align: center;
+                }
+                & button{
+                    border: none;
+                    cursor: pointer;
+                    padding: 0.8rem;
+                    &[class="view"]{
+                        background-color: #00a2ff;
+                        color: white;
+                    }
+                    &[class="edit"]{
+                        background-color: #019927;
+                        color: white;
+                    }
+                    &[class="delete"]{
+                        background-color: #860000;
+                        color: white;
+                    }
+                }
+            }
+        }
+        
+    }
+}

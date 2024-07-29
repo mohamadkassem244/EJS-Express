@@ -1,0 +1,23 @@
+.user {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  margin: 1rem auto;
+  gap: 1rem;
+}
+.user__item span {
+  font-weight: bold;
+}
+.user__item button {
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem;
+}
+.user__item button[class=edit] {
+  background-color: #019927;
+  color: white;
+}
+.user__item button[class=delete] {
+  background-color: #860000;
+  color: white;
+}

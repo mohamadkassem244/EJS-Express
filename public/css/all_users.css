@@ -1,0 +1,45 @@
+table {
+  margin: 1rem auto;
+  width: 1200px;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+table thead tr th {
+  background-color: #ccc;
+  color: black;
+  text-align: left;
+  padding: 1rem 0.4rem;
+}
+table thead tr th:hover {
+  background-color: #424242;
+  color: white;
+}
+table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+table tbody tr:hover {
+  background-color: #ddd;
+}
+table tbody tr td {
+  padding: 1rem 0.4rem;
+}
+table tbody tr td[class=center] {
+  text-align: center;
+}
+table tbody tr td button {
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem;
+}
+table tbody tr td button[class=view] {
+  background-color: #00a2ff;
+  color: white;
+}
+table tbody tr td button[class=edit] {
+  background-color: #019927;
+  color: white;
+}
+table tbody tr td button[class=delete] {
+  background-color: #860000;
+  color: white;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/edit_user.css">
+    <title>New User</title>
+</head>
+<body>
+    <%- include('header') %>
+
+    <h1>new user</h1>
+
+    <form action="/users/" method="POST">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name" id="first_name" required>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name" id="last_name" required>
+
+        <label for="birth_date">Birthdate:</label>
+        <input type="date" name="birth_date" id="birth_date" required>
+
+        <input type="submit" value="Add">
+        
+    </form>
+
+</body>
+</html>

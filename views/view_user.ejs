@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/view_user.css">
+    <title>User</title>
+</head>
+<body>
+    <%- include('header') %>
+
+    <div class="user">
+        <div class="user__item"><span>ID: </span><%= user.id %></div>
+        <div class="user__item"><span>Email: </span><%= user.email %></div>
+        <div class="user__item"><span>Password: </span><%= user.password %></div>
+        <div class="user__item"><span>First Name: </span><%= user.first_name %></div>
+        <div class="user__item"><span>Last Name: </span><%= user.last_name %></div>
+        <div class="user__item"><span>Birthdate: </span><%= user.birth_date %></div>
+        <a class="user__item" href="/users/edit/<%= user.id %>">
+            <button class="edit">Edit</button>
+        </a>
+        <form class="user__item" action="/users/<%= user.id %>?_method=DELETE" method="POST">
+            <button type="submit" class="delete">Delete</button>
+        </form>
+    </div>
+    
+</body>
+</html>
